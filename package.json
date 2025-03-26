@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy":"npm install",
-    "deploy": "npm run dev"
+    "deploy": "npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
