@@ -55,7 +55,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <a href="#home" className="text-xl font-bold tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-blue to-portfolio-purple">
-              Alex Taylor
+              Ahmed Khawar
             </span>
           </a>
           

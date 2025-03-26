@@ -13,36 +13,20 @@ interface JobExperience {
 
 const experiences: JobExperience[] = [
   {
-    company: "TechVision Inc.",
-    role: "Senior Frontend Developer",
-    period: "2021 - Present",
-    description: "Leading the frontend development team in building a SaaS platform used by over 50,000 users. Implementing design systems, optimizing performance, and mentoring junior developers.",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "GraphQL"],
+    company: "BeWhoop",
+    role: "Lead Backend Developer",
+    period: "February 2025 - Present",
+    description: "Leading the Backend development team in building a social networking platform used by over 10,000 users. Implementing design systems, optimizing performance, and ensuring scalability.",
+    skills: ["Node,js", "express.js", "PostMan", "supabase"],
     color: "portfolio-blue"
   },
   {
-    company: "CreativeLabs",
-    role: "UI/UX Developer",
-    period: "2019 - 2021",
-    description: "Collaborated with designers to transform concepts into responsive, interactive interfaces. Improved user engagement by 40% through UI/UX improvements and performance optimizations.",
-    skills: ["React", "JavaScript", "SCSS", "Figma", "REST APIs"],
+    company: "Vertex IT Solution",
+    role: "Software Engineer",
+    period: "August 2023 – April 2024",
+    description: "Developed and deployed a Laravel-based web application and Implemented a CI/CD pipeline for AWS using GitHub Actions.",
+    skills: ["Laravel", "Git", "Github", "AWS", "github actions"],
     color: "portfolio-purple"
-  },
-  {
-    company: "WebSolutions",
-    role: "Frontend Developer",
-    period: "2017 - 2019",
-    description: "Developed and maintained websites for clients across various industries. Implemented responsive design principles and ensured cross-browser compatibility.",
-    skills: ["JavaScript", "HTML/CSS", "jQuery", "Bootstrap", "PHP"],
-    color: "portfolio-pink"
-  },
-  {
-    company: "DigitalFuture",
-    role: "Junior Web Developer",
-    period: "2016 - 2017",
-    description: "Started my career building and customizing WordPress websites for small businesses. Learned the fundamentals of web development and client communication.",
-    skills: ["WordPress", "HTML/CSS", "JavaScript", "PHP", "MySQL"],
-    color: "portfolio-orange"
   }
 ];
 
@@ -113,7 +97,7 @@ const Experience = () => {
         
         <div className="mt-20 flex justify-center fade-in-section">
           <a 
-            href="/resume.pdf" 
+            href="resume.pdf" 
             className={cn(
               "px-6 py-3 rounded-lg font-medium flex items-center gap-2",
               "bg-white border border-gray-200 text-gray-800",
@@ -121,6 +105,7 @@ const Experience = () => {
             )}
             target="_blank"
             rel="noopener noreferrer"
+            download="resume.pdf"
           >
             <svg 
               className="h-5 w-5" 

@@ -14,19 +14,20 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 text-center relative z-10">
         <div className="animate-slide-down">
           <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 mb-6">
-            Frontend Developer & UI Designer
+           Full Stack Engineer.
+
           </span>
         </div>
         
         <h1 className="animate-slide-down text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
           <span className="block">Hi, I'm </span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-blue via-portfolio-purple to-portfolio-pink">
-            Alex Taylor
+            Ahmed Khawar
           </span>
         </h1>
         
         <p className="animate-slide-down text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10">
-          I craft beautiful, functional websites and applications with a focus on user experience and clean code.
+          I craft functional webApps and MobileApps with a focus on it's functionality and user XP.
         </p>
         
         <div className="animate-slide-down flex flex-col sm:flex-row gap-4 justify-center mb-24">

@@ -21,8 +21,8 @@ const About = () => {
             )}>
               <div className="absolute inset-0 bg-gradient-to-br from-portfolio-blue/20 to-portfolio-purple/20"></div>
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" 
-                alt="Alex Taylor" 
+                src="https://media.licdn.com/dms/image/v2/D4D35AQHW3C4AMMBKfg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1725478306041?e=1743598800&v=beta&t=DJG39AKP_5w0cVJSOXcFD5qX4xL3t0OY076HieMShuE"
+                alt="Ahmed Khawar" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -34,28 +34,28 @@ const About = () => {
             <div className="glass-card p-6 space-y-4">
               <h3 className="text-2xl font-bold">Who am I?</h3>
               <p className="text-lg text-gray-600">
-                I'm a passionate frontend developer and UI designer with 5+ years of experience 
-                crafting digital experiences that users love. Based in San Francisco, I combine 
-                technical skills with an eye for design to create beautiful and functional websites 
-                and applications.
+              I am a Software Engineer with a Bachelor’s degree in Software Engineering and practical experience in developing
+and implementing technical solutions. I’m looking to use my skills in problem-solving, programming, and system
+design to add value to a forward-thinking organization. I’m passionate about leveraging technology to solve complex
+challenges and drive impactful results. I’m eager to grow, learn, and contribute meaningfully in a dynamic and
+innovative environment.
               </p>
             </div>
             
             <div className="glass-card p-6 space-y-4">
               <h3 className="text-2xl font-bold">My Approach</h3>
               <p className="text-lg text-gray-600">
-                I believe that great digital products are born at the intersection of technical 
-                excellence, beautiful design, and user empathy. My workflow involves close collaboration 
-                with clients and teams to ensure the final product exceeds expectations.
+                I believe that great systems are built at the intersection of technical 
+                excellence, and well thought out system. My workflow involves close collaboration 
+                with clients and teams to ensure the final deliverable exceeds expectations.
               </p>
             </div>
             
             <div className="glass-card p-6 space-y-4">
               <h3 className="text-2xl font-bold">Beyond Work</h3>
               <p className="text-lg text-gray-600">
-                When I'm not coding, you'll find me hiking in the mountains, experimenting with 
-                photography, or exploring new coffee shops. I'm also an avid reader and enjoy 
-                attending tech meetups and conferences.
+                When I'm not coding, you'll find me watching movies and TV-series, working at the Gym, or exploring new coffee shops. I'm also an avid reader and enjoy 
+                hanging out with friends.
               </p>
             </div>
           </div>

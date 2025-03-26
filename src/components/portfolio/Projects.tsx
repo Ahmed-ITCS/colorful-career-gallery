@@ -9,12 +9,12 @@ interface Project {
   tags: string[];
   link: string;
   featured: boolean;
-  category: "web" | "mobile" | "design";
+  category: "web" ;
 }
 
 const projectsData: Project[] = [
   {
-    title: "E-commerce Dashboard",
+    title: "AI driven Internship platform",
     description: "A comprehensive dashboard for online stores with analytics, inventory management, and order processing features.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
@@ -23,16 +23,16 @@ const projectsData: Project[] = [
     category: "web"
   },
   {
-    title: "Fitness App UI",
+    title: "FYP Management System",
     description: "A modern mobile app interface for fitness tracking, workout planning, and health monitoring.",
     image: "https://images.unsplash.com/photo-1598520106830-8c45c2035460?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     tags: ["Figma", "UI/UX Design", "Prototyping"],
     link: "#project-2",
     featured: true,
-    category: "design"
+    category: "web"
   },
   {
-    title: "Task Management Platform",
+    title: "X-ray Image Classification",
     description: "A collaborative platform for teams to manage tasks, track progress, and streamline workflows.",
     image: "https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
@@ -41,13 +41,13 @@ const projectsData: Project[] = [
     category: "web"
   },
   {
-    title: "Travel Companion App",
+    title: "Fake News Detection",
     description: "A mobile application for travelers to discover destinations, plan itineraries, and share experiences.",
     image: "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     tags: ["React Native", "Firebase", "Google Maps API"],
     link: "#project-4",
     featured: false,
-    category: "mobile"
+    category: "web"
   },
   {
     title: "Financial Dashboard",
@@ -65,11 +65,11 @@ const projectsData: Project[] = [
     tags: ["Flutter", "Dart", "REST API"],
     link: "#project-6",
     featured: false,
-    category: "mobile"
+    category: "web"
   }
 ];
 
-type CategoryFilter = "all" | "web" | "mobile" | "design";
+type CategoryFilter = "all" | "web" ;
 
 const Projects = () => {
   const [filter, setFilter] = useState<CategoryFilter>("all");
@@ -80,9 +80,7 @@ const Projects = () => {
   
   const filterOptions: { value: CategoryFilter; label: string }[] = [
     { value: "all", label: "All Projects" },
-    { value: "web", label: "Web Applications" },
-    { value: "mobile", label: "Mobile Apps" },
-    { value: "design", label: "UI/UX Design" }
+    { value: "web", label: "Web Applications" }
   ];
   
   return (
@@ -175,7 +173,7 @@ const Projects = () => {
         
         <div className="mt-16 text-center fade-in-section">
           <a 
-            href="https://github.com/alextaylor" 
+            href="https://github.com/Ahmed-ITCS" 
             target="_blank" 
             rel="noopener noreferrer"
             className={cn(
