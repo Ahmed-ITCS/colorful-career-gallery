@@ -18,7 +18,7 @@ const experiences: JobExperience[] = [
     period: "February 2025 - Present",
     description: "Leading the Backend development team in building a social networking platform used by over 10,000 users. Implementing design systems, optimizing performance, and ensuring scalability.",
     skills: ["Node,js", "express.js", "PostMan", "supabase"],
-    color: "portfolio-blue"
+    color: "portfolio-teal"
   },
   {
     company: "Vertex IT Solution",
@@ -26,13 +26,13 @@ const experiences: JobExperience[] = [
     period: "August 2023 – April 2024",
     description: "Developed and deployed a Laravel-based web application and Implemented a CI/CD pipeline for AWS using GitHub Actions.",
     skills: ["Laravel", "Git", "Github", "AWS", "github actions"],
-    color: "portfolio-purple"
+    color: "portfolio-dark-teal"
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 bg-gray-50 relative overflow-hidden">
+    <section id="experience" className="py-24 bg-gray-900 relative overflow-hidden">
       <div className="section-container">
         <div className="section-heading fade-in-section">
           <h2 className="section-title">Work Experience</h2>
@@ -43,7 +43,7 @@ const Experience = () => {
         
         <div className="mt-16 relative fade-in-section">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform md:translate-x-px"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-700 transform md:translate-x-px"></div>
           
           {/* Experience items */}
           <div className="space-y-16">
@@ -56,7 +56,7 @@ const Experience = () => {
                 )}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-white border-2 border-gray-200 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-gray-800 border-2 border-portfolio-teal transform -translate-x-1/2 flex items-center justify-center">
                   <Briefcase className={`h-4 w-4 text-${job.color}`} />
                 </div>
                 
@@ -66,22 +66,22 @@ const Experience = () => {
                   index % 2 === 0 ? "md:pr-12" : "md:pl-12"
                 )}>
                   <div className={cn(
-                    "glass-card overflow-hidden transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1",
-                    `hover:border-${job.color}/30`
+                    "glass-card overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1",
+                    `hover:border-${job.color}/50`
                   )}>
                     <div className={`h-1.5 w-full bg-${job.color}`}></div>
                     <div className="p-6">
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium bg-${job.color}/10 text-${job.color} mb-3`}>
+                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium bg-${job.color}/20 text-${job.color} mb-3`}>
                         {job.period}
                       </span>
-                      <h3 className="text-xl font-bold mb-1">{job.role}</h3>
-                      <p className="text-gray-600 font-medium mb-4">{job.company}</p>
-                      <p className="text-gray-600 mb-4">{job.description}</p>
+                      <h3 className="text-xl font-bold mb-1 text-gray-100">{job.role}</h3>
+                      <p className="text-gray-300 font-medium mb-4">{job.company}</p>
+                      <p className="text-gray-400 mb-4">{job.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {job.skills.map((skill, i) => (
                           <span 
                             key={i}
-                            className="px-2.5 py-0.5 text-xs rounded-md bg-gray-100 text-gray-800"
+                            className="px-2.5 py-0.5 text-xs rounded-md bg-gray-700 text-gray-300"
                           >
                             {skill}
                           </span>
@@ -100,8 +100,8 @@ const Experience = () => {
             href="resume.pdf" 
             className={cn(
               "px-6 py-3 rounded-lg font-medium flex items-center gap-2",
-              "bg-white border border-gray-200 text-gray-800",
-              "hover:bg-gray-50 transition-all shadow-sm hover:shadow"
+              "bg-gray-800 border border-gray-700 text-gray-200",
+              "hover:bg-gray-700 transition-all shadow-lg hover:shadow-xl"
             )}
             target="_blank"
             rel="noopener noreferrer"

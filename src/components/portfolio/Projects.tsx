@@ -84,7 +84,7 @@ const Projects = () => {
   ];
   
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
+    <section id="projects" className="py-24 relative overflow-hidden bg-gray-800">
       <div className="section-container">
         <div className="section-heading fade-in-section">
           <h2 className="section-title">My Projects</h2>
@@ -94,15 +94,15 @@ const Projects = () => {
         </div>
         
         <div className="flex justify-center mb-10 fade-in-section">
-          <div className="inline-flex rounded-md p-1 bg-gray-100">
+          <div className="inline-flex rounded-md p-1 bg-gray-700">
             {filterOptions.map(option => (
               <button
                 key={option.value}
                 className={cn(
                   "px-4 py-2 text-sm font-medium rounded-md transition-colors",
                   filter === option.value 
-                    ? "bg-white shadow-sm text-gray-900" 
-                    : "text-gray-600 hover:text-gray-900"
+                    ? "bg-portfolio-teal shadow-sm text-white" 
+                    : "text-gray-300 hover:text-white"
                 )}
                 onClick={() => setFilter(option.value)}
               >
@@ -118,28 +118,28 @@ const Projects = () => {
               key={index}
               className={cn(
                 "glass-card overflow-hidden transition-all duration-300",
-                "hover:shadow-xl hover:-translate-y-1 group"
+                "hover:shadow-2xl hover:-translate-y-1 group"
               )}
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-gray-900/20 group-hover:bg-gray-900/10 transition-colors duration-300 z-10"></div>
+                <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/20 transition-colors duration-300 z-10"></div>
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {project.featured && (
-                  <span className="absolute top-3 right-3 px-2 py-1 bg-portfolio-purple text-white text-xs font-medium rounded-md z-20">
+                  <span className="absolute top-3 right-3 px-2 py-1 bg-portfolio-dark-teal text-white text-xs font-medium rounded-md z-20">
                     Featured
                   </span>
                 )}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-100">{project.title}</h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded">
+                    <span key={i} className="px-2 py-0.5 text-xs bg-gray-700 text-gray-300 rounded">
                       {tag}
                     </span>
                   ))}
@@ -147,8 +147,8 @@ const Projects = () => {
                 <a 
                   href={project.link} 
                   className={cn(
-                    "inline-flex items-center font-medium text-portfolio-blue",
-                    "hover:text-portfolio-purple transition-colors"
+                    "inline-flex items-center font-medium text-portfolio-light-teal",
+                    "hover:text-portfolio-cyan transition-colors"
                   )}
                 >
                   View Project
@@ -178,8 +178,8 @@ const Projects = () => {
             rel="noopener noreferrer"
             className={cn(
               "px-6 py-3 rounded-lg font-medium inline-flex items-center gap-2",
-              "bg-gray-900 text-white",
-              "hover:bg-gray-800 transition-all"
+              "bg-portfolio-dark-teal text-white",
+              "hover:bg-portfolio-teal transition-all"
             )}
           >
             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

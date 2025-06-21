@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-//aefjkha
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -48,13 +48,13 @@ const Header = () => {
     <header 
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 py-4",
-        isScrolled ? "backdrop-blur-lg bg-white/70 dark:bg-slate-900/70 shadow-sm" : "bg-transparent"
+        isScrolled ? "backdrop-blur-lg bg-gray-900/80 shadow-lg border-b border-gray-800" : "bg-transparent"
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-xl font-bold tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-blue to-portfolio-purple">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-light-teal to-portfolio-cyan">
               Ahmed Khawar
             </span>
           </a>
@@ -68,8 +68,8 @@ const Header = () => {
                 className={cn(
                   "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200",
                   activeSection === link.href.substring(1)
-                    ? "text-white bg-gradient-to-r from-portfolio-blue to-portfolio-purple"
-                    : "hover:bg-gray-100 dark:hover:bg-gray-800"
+                    ? "text-white bg-gradient-to-r from-portfolio-dark-teal to-portfolio-teal"
+                    : "text-gray-300 hover:bg-gray-800 hover:text-white"
                 )}
               >
                 {link.name}
@@ -79,7 +79,7 @@ const Header = () => {
           
           {/* Mobile menu button */}
           <button
-            className="md:hidden rounded-md p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-portfolio-blue"
+            className="md:hidden rounded-md p-2 text-gray-300 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-portfolio-teal"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <span className="sr-only">Open main menu</span>
@@ -112,13 +112,13 @@ const Header = () => {
         {/* Mobile menu */}
         <div
           className={cn(
-            "md:hidden fixed inset-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg z-50 transition-transform duration-300 ease-in-out transform",
+            "md:hidden fixed inset-0 bg-gray-900/95 backdrop-blur-lg z-50 transition-transform duration-300 ease-in-out transform",
             menuOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
           <div className="p-4 flex justify-end">
             <button
-              className="rounded-md p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-portfolio-blue"
+              className="rounded-md p-2 text-gray-300 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-portfolio-teal"
               onClick={() => setMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -146,8 +146,8 @@ const Header = () => {
                 className={cn(
                   "block px-3 py-3 text-lg font-medium transition-colors duration-200",
                   activeSection === link.href.substring(1)
-                    ? "text-portfolio-blue font-semibold"
-                    : "text-gray-600 hover:text-gray-900"
+                    ? "text-portfolio-light-teal font-semibold"
+                    : "text-gray-300 hover:text-white"
                 )}
                 onClick={() => setMenuOpen(false)}
               >

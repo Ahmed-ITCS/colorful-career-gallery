@@ -63,14 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom portfolio colors
+				// Updated portfolio colors for dark theme with dark teal
 				portfolio: {
-					blue: "#0EA5E9",
-					purple: "#8B5CF6",
-					pink: "#EC4899",
-					orange: "#F97316",
-					teal: "#0D9488",
-					slate: "#1E293B"
+					teal: "#0f766e",
+					"dark-teal": "#134e4a",
+					"light-teal": "#14b8a6",
+					cyan: "#0891b2",
+					emerald: "#059669",
+					gray: "#374151"
 				}
 			},
 			borderRadius: {

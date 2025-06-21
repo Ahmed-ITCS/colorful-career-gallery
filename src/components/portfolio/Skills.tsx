@@ -21,7 +21,7 @@ const skillsData: SkillCategory[] = [
       { name: "JavaScript", level: 60 },
       { name: "React.js", level: 40 },
     ],
-    color: "portfolio-blue"
+    color: "portfolio-teal"
   },
   {
     name: "Backend & Databases",
@@ -39,7 +39,7 @@ const skillsData: SkillCategory[] = [
       { name: "Flask", level: 80 },
       { name: "SupaBase", level: 50 }
     ],
-    color: "portfolio-purple"
+    color: "portfolio-dark-teal"
   },
   {
     name: "DevOps, Version Control and PM Tools",
@@ -55,13 +55,13 @@ const skillsData: SkillCategory[] = [
       { name: "ClickUp", level: 80 },
       { name: "CI/CD (GitHub Actions, AWS)", level: 50 }
     ],
-    color: "portfolio-blue"
+    color: "portfolio-cyan"
   }
 ];
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-gray-50">
+    <section id="skills" className="py-24 bg-gray-900">
       <div className="section-container">
         <div className="section-heading fade-in-section">
           <h2 className="section-title">Skills & Expertise</h2>
@@ -72,24 +72,24 @@ const Skills = () => {
         
         <div className="grid md:grid-cols-3 gap-8 fade-in-section">
           {skillsData.map((category, index) => (
-            <div key={index} className="glass-card overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div key={index} className="glass-card overflow-hidden hover:shadow-2xl transition-all duration-300">
               <div className={`h-1 w-full bg-${category.color}`}></div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-${category.color}/10 text-${category.color}`}>
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-${category.color}/20 text-${category.color}`}>
                     {category.icon}
                   </div>
-                  <h3 className="text-xl font-bold">{category.name}</h3>
+                  <h3 className="text-xl font-bold text-gray-100">{category.name}</h3>
                 </div>
                 
                 <div className="space-y-4">
                   {category.skills.map((skill, i) => (
                     <div key={i}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm text-gray-500">{skill.level}%</span>
+                        <span className="text-sm font-medium text-gray-200">{skill.name}</span>
+                        <span className="text-sm text-gray-400">{skill.level}%</span>
                       </div>
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
                         <div 
                           className={`h-full bg-${category.color} rounded-full transition-all duration-1000 ease-out`}
                           style={{ width: `${skill.level}%`, transitionDelay: `${i * 100}ms` }}
@@ -104,8 +104,8 @@ const Skills = () => {
         </div>
         
         <div className="mt-16 grid md:grid-cols-2 gap-8 fade-in-section">
-          <div className="glass-card p-6 hover:shadow-lg transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4">Languages</h3>
+          <div className="glass-card p-6 hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-4 text-gray-100">Languages</h3>
             <div className="flex flex-wrap gap-3">
               {[
                 "JavaScript", "Python", "HTML", "CSS/SCSS", "SQL", "Python", "PHP","C++"
@@ -114,7 +114,7 @@ const Skills = () => {
                   key={i}
                   className={cn(
                     "px-3 py-1.5 rounded-md text-sm",
-                    "bg-white border border-gray-200 shadow-sm"
+                    "bg-gray-700 border border-gray-600 shadow-sm text-gray-200"
                   )}
                 >
                   {lang}
@@ -123,8 +123,8 @@ const Skills = () => {
             </div>
           </div>
           
-          <div className="glass-card p-6 hover:shadow-lg transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4">Tools & Platforms</h3>
+          <div className="glass-card p-6 hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-4 text-gray-100">Tools & Platforms</h3>
             <div className="flex flex-wrap gap-3">
               {[
                 "VS Code", "Git", "GitHub", "Docker", "Netlify", "NPM", "Jira", "Slack","BitBucket","Trello","ClickUp","CI/CD (GitHub Actions, AWS)"
@@ -133,7 +133,7 @@ const Skills = () => {
                   key={i}
                   className={cn(
                     "px-3 py-1.5 rounded-md text-sm",
-                    "bg-white border border-gray-200 shadow-sm"
+                    "bg-gray-700 border border-gray-600 shadow-sm text-gray-200"
                   )}
                 >
                   {tool}
@@ -142,8 +142,8 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="glass-card p-6 hover:shadow-lg transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4">Software Development Practices</h3>
+          <div className="glass-card p-6 hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-4 text-gray-100">Software Development Practices</h3>
             <div className="flex flex-wrap gap-3">
               {[
                 "Agile", "Code Reviews", "Debugging", "Performance Optimization"
@@ -152,7 +152,7 @@ const Skills = () => {
                   key={i}
                   className={cn(
                     "px-3 py-1.5 rounded-md text-sm",
-                    "bg-white border border-gray-200 shadow-sm"
+                    "bg-gray-700 border border-gray-600 shadow-sm text-gray-200"
                   )}
                 >
                   {tool}
@@ -161,8 +161,8 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="glass-card p-6 hover:shadow-lg transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4">Collaboration & Leadership:</h3>
+          <div className="glass-card p-6 hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-4 text-gray-100">Collaboration & Leadership:</h3>
             <div className="flex flex-wrap gap-3">
               {[
                 "Strong teamwork", "leadership", "cross-functional communication skills"
@@ -171,7 +171,7 @@ const Skills = () => {
                   key={i}
                   className={cn(
                     "px-3 py-1.5 rounded-md text-sm",
-                    "bg-white border border-gray-200 shadow-sm"
+                    "bg-gray-700 border border-gray-600 shadow-sm text-gray-200"
                   )}
                 >
                   {tool}
@@ -180,8 +180,8 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="glass-card p-6 hover:shadow-lg transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4">Problem-Solving & Adaptability</h3>
+          <div className="glass-card p-6 hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-4 text-gray-100">Problem-Solving & Adaptability</h3>
             <div className="flex flex-wrap gap-3">
               {[
                 "Ability to handle pressure", "manage time effectively", "troubleshoot complex technical issues"
@@ -190,7 +190,7 @@ const Skills = () => {
                   key={i}
                   className={cn(
                     "px-3 py-1.5 rounded-md text-sm",
-                    "bg-white border border-gray-200 shadow-sm"
+                    "bg-gray-700 border border-gray-600 shadow-sm text-gray-200"
                   )}
                 >
                   {tool}
@@ -198,8 +198,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
