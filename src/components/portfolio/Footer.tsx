@@ -68,7 +68,7 @@ const Footer = () => {
             
             <p className="text-gray-400">
               <span className="block mb-1">Email: ahmedkhawarbs@gmail.com</span>
-              <span>Phone: +966549488428</span>
+              <span>Phone: +923331251264</span>
             </p>
           </div>
         </div>
