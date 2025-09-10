@@ -14,7 +14,7 @@ const Footer = () => {
              Full Stack Engineer. with 1+ years of experience.
             </p>
             <p className="text-gray-400">
-              Based in Al-Khobar, Saudi Arabia
+              Based in Lahore, Pakistan 
             </p>
           </div>
           
